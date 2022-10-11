@@ -1,12 +1,12 @@
-{% set name = 'geotile' %}
-{% set version = '0.2.2' %}
+{% set name = "geotile" %}
+{% set version = "0.2.3" %}
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e0e2ef27857c769ed45aa933b9070b7a4d3d4bd8d2ec4205d40eae424a683f1b
+  sha256: 51ebf88637e458050d127c3a1b1f12f50a99eb0dd79af444a7c19fe9874b918a
 
 build:
   noarch: python
@@ -28,7 +28,7 @@ requirements:
 
 test:
   imports:
-    - geoTile
+    - geotile
   commands:
     - pip check
   requires:
