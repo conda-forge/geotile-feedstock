@@ -1,17 +1,17 @@
 {% set name = "geotile" %}
-{% set version = "0.2.3" %}
+{% set version = "0.2.4" %}
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 51ebf88637e458050d127c3a1b1f12f50a99eb0dd79af444a7c19fe9874b918a
+  sha256: 611993ea3969550f812fa2415c735e1e4fdfb1b872b080e25a66ad9ca61d6600
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -38,7 +38,7 @@ about:
   home: https://github.com/iamtekson/geotile
   license: MIT
   license_file: LICENSE
-  summary: "The package for management of geographic raster tiles."
+  summary: The package for management of geographic raster tiles.
   description: |
     The geotile package is useful for the manipulation of geospatial raster tiles. 
   dev_url: https://github.com/iamtekson/geotile
