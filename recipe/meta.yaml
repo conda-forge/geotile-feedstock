@@ -1,12 +1,12 @@
 {% set name = "geotile" %}
-{% set version = "1.0.7" %}
+{% set version = "1.0.9" %}
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 92ffa3f2560d2f2f3445ff7db8ce3e9b298bc1968e2ea6a19a04613ec8288ebc
+  sha256: 0cd0f92f444d7fe7b28815394a15e5a8d9eb9b05fd5de77790ff3a0df697f580
 
 build:
   noarch: python
